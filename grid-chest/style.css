@@ -1,0 +1,32 @@
+/*----- Globals -----*/
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    max-width: 1920px;
+    background-color: rgb(104, 59, 35);
+    transform: translate(50%, 50%);
+    /* margin-left: 50%; */
+}
+
+/*---------- Board  --------*/
+ 
+.board{
+width: 1080px;
+display: grid;
+
+grid-template-columns: repeat(8, 1fr);
+grid-template-rows: repeat(8, 1fr);
+
+border: 10px solid rgb(207, 226, 243);
+}
+
+/*----------- Cells -------*/
+
+.board div{
+    width: 135px;
+    height: 135px;
+    background-color: rgb(207, 226, 243);
+}
