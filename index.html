@@ -1,86 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="/favicon.png" type="image/png" />
+
     <title>Chess</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="board">
-         <!-- Клетки шахматной доски -->
-          <!-- Строка 1 -->
-        <div class="white"></div>
-        <img class="black" src="./images/square_1.png">
-        <div class="white"></div>
-        <img class="black" src="./images/square_3.png">
-        <div class="white"></div>
-        <img class="black" src="./images/square_5.png">
-        <div class="white"></div>
-        <img class="black" src="./images/square_7.png">
-          <!-- Строка 2 -->
-          <img class="black" src="./images/square_9.png">
-        <div class="white"></div>
-        <img class="black" src="./images/square_11.png">
-        <div class="white"></div>
-        <img class="black" src="./images/square_13.png">
-        <div class="white"></div>
-        <img class="black" src="./images/square_15.png">
-        <div class="white"></div>
-          <!-- Строка 3 -->
-        <div class="white"></div>
-        <img class="black" src="./images/square_17.png">
-        <div class="white"></div>
-        <img class="black" src="./images/square_19.png">
-        <div class="white"></div>
-        <img class="black" src="./images/square_21.png">
-        <div class="white"></div>
-        <img class="black" src="./images/square_23.png">
-          <!-- Строка 4 -->
-          <img class="black" src="./images/square_25.png">
-        <div class="white"></div>
-        <img class="black" src="./images/square_27.png">
-        <div class="white"></div>
-        <img class="black" src="./images/square_29.png">
-        <div class="white"></div>
-        <img class="black" src="./images/square_31.png">
-        <div class="white"></div>
-          <!-- Строка 5 -->
-        <div class="white"></div>
-        <img class="black" src="./images/square_33.png">
-        <div class="white"></div>
-        <img class="black" src="./images/square_35.png">
-        <div class="white"></div>
-        <img class="black" src="./images/square_37.png">
-        <div class="white"></div>
-        <img class="black" src="./images/square_39.png">
-          <!-- Строка 6 -->
-          <img class="black" src="./images/square_41.png">
-        <div class="white"></div>
-        <img class="black" src="./images/square_43.png">
-        <div class="white"></div>
-        <img class="black" src="./images/square_45.png">
-        <div class="white"></div>
-        <img class="black" src="./images/square_47.png">
-        <div class="white"></div>
-          <!-- Строка 7 -->
-        <div class="white"></div>
-        <img class="black" src="./images/square_49.png">
-        <div class="white"></div>
-        <img class="black" src="./images/square_51.png">
-        <div class="white"></div>
-        <img class="black" src="./images/square_53.png">
-        <div class="white"></div>
-        <img class="black" src="./images/square_55.png">
-          <!-- Строка 8 -->
-          <img class="black" src="./images/square_57.png">
-        <div class="white"></div>
-        <img class="black" src="./images/square_59.png">
-        <div class="white"></div>
-        <img class="black" src="./images/square_61.png">
-        <div class="white"></div>
-        <img class="black" src="./images/square_63.png">
-        <div class="white"></div>
+      <!-- Клетки шахматной доски -->
+      <!-- Строка 1 -->
+      <div class="white" id="b1"></div>
+      <div>
+        <img class="over" src="./icons/knight-black.png" alt="">
+        <img class="black" src="./images/square_1.png" />
+      </div>
+      <div class="white" id="b2"></div>
+      <div>
+        <img class="over" src="./icons/king-black.png" alt="">
+        <img class="black" src="./images/square_3.png" />
+      </div>
+      <div class="white" id="b3"></div>
+      <div>
+        <img class="over" src="./icons/bishop-black.png" alt="">
+        <img class="black" src="./images/square_5.png" />
+      </div>
+      <div class="white" id="b4"></div>
+      <div>
+        <img class="over" src="./icons/rook-black.png" alt="">
+        <img class="black" src="./images/square_7.png" />
+      </div>
+      <!-- Строка 2 -->
+      <div>
+        <img class="over" src="./icons/pawn-black.png" />
+        <img class="black sec-row-blc bcrgr" src="./images/square_9.png" />
+      </div>
+      <div class="white sec-row-blc"></div>
+      <div>
+        <img class="over" src="./icons/pawn-black.png" />
+        <img class="black sec-row-blc bcrgr" src="./images/square_11.png" />
+      </div>
+      <div class="white sec-row-blc"></div>
+      <div>
+        <img class="over" src="./icons/pawn-black.png" />
+        <img class="black sec-row-blc bcrgr" src="./images/square_13.png" />
+      </div>
+      <div class="white sec-row-blc"></div>
+      <div>
+        <img class="over" src="./icons/pawn-black.png" />
+        <img class="black sec-row-blc bcrgr" src="./images/square_15.png" />
+      </div>
+      <div class="white sec-row-blc"></div>
+      <!-- Строка 3 -->
+      <div class="white"></div>
+      <img class="black" src="./images/square_17.png" />
+      <div class="white"></div>
+      <img class="black" src="./images/square_19.png" />
+      <div class="white"></div>
+      <img class="black" src="./images/square_21.png" />
+      <div class="white"></div>
+      <img class="black" src="./images/square_23.png" />
+      <!-- Строка 4 -->
+      <img class="black" src="./images/square_25.png" />
+      <div class="white"></div>
+      <img class="black" src="./images/square_27.png" />
+      <div class="white"></div>
+      <img class="black" src="./images/square_29.png" />
+      <div class="white"></div>
+      <img class="black" src="./images/square_31.png" />
+      <div class="white"></div>
+      <!-- Строка 5 -->
+      <div class="white"></div>
+      <img class="black" src="./images/square_33.png" />
+      <div class="white"></div>
+      <img class="black" src="./images/square_35.png" />
+      <div class="white"></div>
+      <img class="black" src="./images/square_37.png" />
+      <div class="white"></div>
+      <img class="black" src="./images/square_39.png" />
+      <!-- Строка 6 -->
+      <img class="black" src="./images/square_41.png" />
+      <div class="white"></div>
+      <img class="black" src="./images/square_43.png" />
+      <div class="white"></div>
+      <img class="black" src="./images/square_45.png" />
+      <div class="white"></div>
+      <img class="black" src="./images/square_47.png" />
+      <div class="white"></div>
+      <!-- Строка 7 -->
+      <div class="white sec-row-wht"></div>
+      <div>
+        <img class="over" src="./icons/pawn-white.png" />
+        <img class="black sec-row-wht" src="./images/square_49.png" />
+      </div>
+      <div class="white sec-row-wht"></div>
+      <div>
+        <img class="over" src="./icons/pawn-white.png" />
+        <img class="black sec-row-wht" src="./images/square_51.png" />
+      </div>
+      <div class="white sec-row-wht"></div>
+      <div>
+        <img class="over" src="./icons/pawn-white.png" />
+        <img class="black sec-row-wht" src="./images/square_53.png" />
+      </div>
+      <div class="white sec-row-wht"></div>
+      <div>
+        <img class="over" src="./icons/pawn-white.png" />
+        <img class="black sec-row-wht" src="./images/square_55.png" />
+      </div>
+
+      <!-- Строка 8 -->
+      <div>
+        <img class="over smaller" src="./icons/rook-white.png" />
+        <img class="black" src="./images/square_57.png" />
+      </div>
+      <div class="white" id="w1"></div>
+      <div>
+        <img class="over smaller" src="./icons/bishop-white.png" />
+        <img class="black" src="./images/square_59.png" />
+      </div>
+      <div class="white" id="w2"></div>
+      <div>
+        <img class="over smaller" src="./icons/king-white.png" />
+        <img class="black" src="./images/square_61.png" />
+      </div>
+      <div class="white " id="w3"></div>
+      <div>
+        <img class="over" src="./icons/knight-white.png" />
+        <img class="black" src="./images/square_57.png" />
+      </div>
+      <div class="white " id="w4"></div>
     </div>
-</body>
+  </body>
 </html>
