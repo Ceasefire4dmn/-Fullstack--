@@ -8,7 +8,6 @@ body{
     max-width: 1920px;
     background-color: rgb(104, 59, 35);
     transform: translate(50%, 50%);
-    /* margin-left: 50%; */
 }
 
 
@@ -85,4 +84,5 @@ div > .white{
 
 #b4{
     background-image: url(./icons/knight-black.png);
+    transform: scaleX(-1); 
 }
