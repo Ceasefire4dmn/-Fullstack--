@@ -11,6 +11,7 @@ body{
     /* margin-left: 50%; */
 }
 
+
 /*---------- Board  --------*/
  
 .board{
@@ -20,7 +21,7 @@ display: grid;
 grid-template-columns: repeat(8, 1fr);
 grid-template-rows: repeat(8, 1fr);
 
-border: 10px solid rgb(207, 226, 243);
+border: 15px solid rgb(65, 36, 18);
 }
 
 /*----------- Cells -------*/
@@ -29,4 +30,59 @@ border: 10px solid rgb(207, 226, 243);
     width: 135px;
     height: 135px;
     background-color: rgb(207, 226, 243);
+}
+
+div > .white{
+    background-repeat: no-repeat;
+    background-position: bottom -1px right 0;
+}
+/*----------- Figures -----*/
+
+.sec-row-blc{
+    background-image: url(./icons/pawn-black.png);
+
+}
+
+.sec-row-wht{
+    background-image: url(./icons/pawn-white.png);
+}
+
+.over{
+    position: absolute;
+    margin-top : 7px;   
+}
+
+/*---------- White pieces -----------*/
+#w1{
+    background-image: url(./icons/knight-white.png);
+}
+
+#w2{
+    background-image: url(./icons/queen-white.png);
+}
+
+#w3{
+    background-image: url(./icons/bishop-white.png);
+}
+
+#w4{
+    background-image: url(./icons/rook-white.png);
+}
+
+/*---------- Black pieces -----------*/
+
+#b1{
+    background-image: url(./icons/rook-black.png);
+}
+
+#b2{
+    background-image: url(./icons/bishop-black.png);
+}
+
+#b3{
+    background-image: url(./icons/queen-black.png);
+}
+
+#b4{
+    background-image: url(./icons/knight-black.png);
 }
